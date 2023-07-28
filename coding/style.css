@@ -1,0 +1,37 @@
+*{
+    padding: 0px;
+    margin: 0;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+text-align: justify;
+
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: green;
+
+    border-radius:  0px 0px 25px 25px;
+    margin: auto;
+}
+
+.conteudo:hover{
+    color: red;
+}
+ 
+
+
+footer > a:hover {
+    color: red;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
