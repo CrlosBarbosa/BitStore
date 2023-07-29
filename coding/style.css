@@ -21,12 +21,23 @@ main{
     margin: auto;
 }
 
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.conteudo{
+    background-color: red;
+
+
+}
+
+
 .conteudo:hover{
     color: red;
 }
  
-
-
 footer > a:hover {
     color: red;
 }
