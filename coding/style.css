@@ -9,12 +9,28 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-area: "nav nav nav nav"
                 "main main main main";
+}               
+
+p{
+    color: bla;
 }
 
-#main{
+#nav{
+    padding-bottom: 8vh;
+}
+
+.main{
     grid-area: main;
+    background-color: wheat;
 }
-
+.main#img01{
+    background-image: url(/imgs/lobo1.jpg);
+    background-size: cover;
+    padding: 10vh;
+    background-position: right center;
+    background-attachment: fixed;
+    
+}
 
 #nav{
     justify-content: space-between;
