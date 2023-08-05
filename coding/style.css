@@ -11,8 +11,14 @@
                 "main main main main";
 }               
 
+
+h1{
+
+    padding-top: 35px;
+
+}
 p{
-    color: bla;
+    color: white;
 }
 
 #nav{
@@ -26,7 +32,7 @@ p{
 .main#img01{
     background-image: url(/imgs/lobo1.jpg);
     background-size: cover;
-    padding: 10vh;
+    padding: 24vh;
     background-position: right center;
     background-attachment: fixed;
     
