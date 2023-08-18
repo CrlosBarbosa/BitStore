@@ -3,31 +3,48 @@
     padding: 0px;
 }
 
+body{
+    background-color: white;
+}
+
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-area: "nav nav nav nav"
-                "main main main main";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-area: "nav nav nav"
+                "main main main"
+                "footer footer footer";
 }               
 
-
-h1{
-
-    padding-top: 35px;
-
+a{
+    padding: 10px;
+    margin-right: 0px;
+    padding-right: 0px;
+    text-decoration: none;
 }
-p{
+
+#produtos:hover{
+    background-color: red;
+    border-radius: 10px;
+}
+
+#quemsomos:hover{
+    background-color: pink;
+    border-radius: 10px;
+}
+
+#login:hover{
+    background-color: purple;
+    border-radius: 10px;
+}
+
+.main > p{
     color: white;
-}
-
-#nav{
-    padding-bottom: 8vh;
 }
 
 .main{
     grid-area: main;
-    background-color: wheat;
+    background-color: white;
 }
 .main#img01{
     background-image: url(/imgs/lobo1.jpg);
@@ -42,11 +59,12 @@ p{
     justify-content: space-between;
     grid-area: nav;
     text-align: right;
+    margin: 2px;    
+    padding: 10px;
 }
 
 #menu{
     padding: 20px;
-    text-align:right;
 }
 
 p{
@@ -73,4 +91,4 @@ img{
     flex: 1 1 200px;
     margin: 10px;
 }
- 
+
