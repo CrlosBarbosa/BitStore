@@ -1,0 +1,74 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #353138;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+#nav{
+    justify-content: space-between;
+    text-align: right; 
+    padding: 15px;
+    background-color: white;
+
+    margin-bottom: 35px;
+}
+
+#menu{
+    padding: 10px;
+}
+
+main{
+    padding: 20px;
+    border: 1px solid black;
+    margin: auto;
+
+    min-width: 300px;
+    max-width: 1000px;
+}
+
+section.imagem{
+    display: inline-block;
+    padding: 40vh;
+    background-size: cover;
+
+    width: 15px;
+    height: 10px;
+}
+
+section#imgfundadores{
+    background-image: url(/imgs/lobo3.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+
+    color: white;
+}
+
+p#resposta{
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    padding: 2px;
+    text-align: left;
+    max-width: 95vh;
+
+    color: white;
+}
