@@ -7,6 +7,10 @@ body{
     background-color: white;
 }
 
+h1{
+    padding: 10px;
+}
+
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -90,5 +94,7 @@ img{
 .flex > div{
     flex: 1 1 200px;
     margin: 10px;
+
+    border: 1px solid black;
 }
 
