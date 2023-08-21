@@ -37,11 +37,9 @@ main{
 
 section.imagem{
     display: inline-block;
-    padding: 40vh;
     background-size: cover;
-
-    width: 15px;
-    height: 10px;
+    padding: 40vh;
+    margin: 0 auto;
 }
 
 section#imgfundadores{
