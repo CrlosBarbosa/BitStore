@@ -1,4 +1,4 @@
-body{
+*{
     margin: 0px;
     padding: 0px;
 }
@@ -12,8 +12,6 @@ a{
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-
 
 #nav{
     justify-content: space-between;
@@ -55,8 +53,6 @@ section#imgfundadores{
 h1{
     text-align: center;
     padding: 10px;
-    margin: 0 auto;
-
     color: white;
 }
 
@@ -67,8 +63,8 @@ p#resposta{
 
 p{
     padding: 2px;
-    text-align: left;
     max-width: 95vh;
-
     color: white;
+    margin: 0 auto;
+
 }
