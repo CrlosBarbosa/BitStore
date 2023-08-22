@@ -1,3 +1,19 @@
+/* Media query para telas menores (por exemplo, tablets e smartphones) */
+@media (max-width: 768px) {
+    section {
+        padding: 5vh 0; /* Reduz o padding em telas menores */
+    }
+
+    section#imgfundadores {
+        min-height: 200px; /* Ajusta a altura mínima para telas menores */
+    }
+}
+@media (max-width: 768px) {
+    main {
+        padding: 2vh; /* Reduza o padding em telas menores */
+    }
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -11,47 +27,41 @@ body{
 a{
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+
+    display: inline-block;
+    justify-content: right;
+
+    padding: 10px;
+}
+
+a:hover{
+   background-color: rgba(128, 0, 128, 0.363);
+   transition-duration: 0.8s;
+   padding: 5px;
 }
 
 #nav{
     justify-content: space-between;
     text-align: right; 
     padding: 15px;
-    background-color: white;
+    background-color: #353138;
 
     margin-bottom: 35px;
 }
 
-#menu{
-    padding: 10px;
-}
-
-main{
-    padding: 20px;
-    border: 1px solid black;
+main {
+    padding: 5vh; /* Altere o padding para unidades relativas */
     margin: auto;
-
     min-width: 300px;
     max-width: 1000px;
 }
 
-section.imagem{
-    display: inline-block;
-    background-size: cover;
-    padding: 40vh;
-    margin: 0 auto;
-}
-
-section#imgfundadores{
-    background-image: url(/imgs/lobo3.jpg);
-    background-position: right center;
-    background-attachment: fixed;
-}
-
 h1{
     text-align: center;
-    padding: 10px;
+    padding: 45px;
     color: white;
+    padding-top: 5px;
 }
 
 p#resposta{
@@ -60,9 +70,30 @@ p#resposta{
 }
 
 p{
-    padding: 2px;
+    padding: 4px;
     max-width: 95vh;
     color: white;
     margin: 0 auto;
+}
 
+section {
+    padding: 10vh 0;
+    line-height: 2em;
+    padding-left: 30px;
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Estilos para a seção de imagem */
+section.imagem {
+    width: 100%;
+    height: auto; /* Redimensiona a imagem mantendo a proporção */
+}
+
+/* Estilos específicos para a seção #imgfundadores */
+section#imgfundadores {
+    background-image: url(/imgs/lobo3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 300px; /* Defina uma altura mínima para a seção */
 }

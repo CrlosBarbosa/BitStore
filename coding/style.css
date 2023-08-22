@@ -25,6 +25,13 @@ a{
     margin-right: 0px;
     padding-right: 0px;
     text-decoration: none;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a:hover{
+    background-color: rgba(128, 0, 128, 0.363);
+    transition-duration: 0.8s;
+    padding: 5px;
 }
 
 #produtos:hover{
