@@ -3,11 +3,20 @@
     padding: 0px;
 }
 
-body{
+  /* Estilos para tornar o banner responsivo */
+  @media screen and (max-width: 768px) {
+    .main {
+      max-width: 100%; /* Defina a largura máxima para 100% em telas menores */
+    }
+  }
+
+body,html{
     background-color: white;
+    min-width: 100vh;
 }
 
 h1{
+    text-align: center;
     padding: 10px;
 }
 
@@ -28,10 +37,15 @@ a{
 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-a:hover{
-    background-color: rgba(128, 0, 128, 0.363);
+
+.container #nav:hover{
     transition-duration: 0.8s;
     padding: 5px;
+}
+
+#inicio:hover{
+    background-color: red;
+    border-radius: 10px;
 }
 
 #produtos:hover{
@@ -49,10 +63,6 @@ a:hover{
     border-radius: 10px;
 }
 
-.main > p{
-    color: white;
-}
-
 .main{
     grid-area: main;
     background-color: white;
@@ -63,7 +73,6 @@ a:hover{
     padding: 24vh;
     background-position: right center;
     background-attachment: fixed;
-    
 }
 
 #nav{
@@ -76,14 +85,6 @@ a:hover{
 
 #menu{
     padding: 20px;
-}
-
-p{
-    text-align: center;
-}
-
-h1{
-    text-align: center;    
 }
 
 img{
@@ -105,3 +106,29 @@ img{
     border: 1px solid black;
 }
 
+footer{
+    grid-area: footer;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    padding: 40px 0; /* Espaçamento interno do rodapé */
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin-bottom: 10px;
+    color: white;
+}
+
+footer a{
+    color: white;
+}
+footer p{
+    padding-left: 8px;
+}

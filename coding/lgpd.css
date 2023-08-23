@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #353138;
+    font-family: sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-area: "nav nav nav"
+                "main main main"
+                "footer footer footer";
+}               
+
+a{
+    color: white;
+    padding: 10px;
+    margin-right: 0px;
+    padding-right: 0px;
+    text-decoration: none;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container #nav:hover{
+    transition-duration: 0.8s;
+    padding: 5px;
+}
+
+#nav{
+    justify-content: space-between;
+    grid-area: nav;
+    text-align: right;
+    margin: 2px;    
+    padding: 10px;
+}
+
+#menu{
+    padding: 20px;
+}
+
+h1{
+    margin: 50px;
+    color: white;
+    text-align: center;
+}
+
+section{
+    text-align: center;
+}
+
+p{
+    color: white;
+}
