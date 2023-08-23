@@ -68,6 +68,9 @@ p#resposta{
     padding: 5px;
     font-family: 'Courier New', Courier, monospace;
 }
+p#pergunta{
+    padding-bottom: 10px; padding-top: 10px;
+}
 
 p{
     padding: 4px;
