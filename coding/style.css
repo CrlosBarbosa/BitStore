@@ -45,34 +45,30 @@ a{
 }
 
 #inicio:hover{
-    background-color: red;
     border-radius: 10px;
     box-sizing: border-box;
 }
 
 #produtos:hover{
-    background-color: red;
     border-radius: 10px;
     box-sizing: border-box;
 }
 
 #quemsomos:hover{
-    background-color: pink;
     border-radius: 10px;
     box-sizing: border-box;
 }
 
 #login:hover{
-    background-color: purple;
     border-radius: 10px;
     box-sizing: border-box;
 }
 
-.main{
-    grid-area: main;
-    background-color: white;
+.banner{
+    background-color: black;
+    border: 1px solid black;
 }
-.main#img01{
+.banner#img01{
     background-image: url(/imgs/lobo1.jpg);
     background-size: cover;
     padding: 24vh;
@@ -107,9 +103,14 @@ img{
 .flex > div{
     flex: 1 1 200px;
     margin: 10px;
-
-    border: 1px solid black;
 }
+
+.flex  p{
+    color: blue;
+    text-align: center;
+    padding: 5px;
+}
+
 
 footer{
     grid-area: footer;
@@ -136,4 +137,9 @@ footer a{
 }
 footer p{
     padding-left: 8px;
+}
+
+p#redes{
+    margin: 15px;
+    margin-left: 0px;
 }
