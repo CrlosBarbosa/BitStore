@@ -71,6 +71,7 @@ a{
 .banner#img01{
     background-image: url(/imgs/lobo1.jpg);
     background-size: cover;
+    box-shadow: 2px black;
     padding: 24vh;
     background-position: right center;
     background-attachment: fixed;
