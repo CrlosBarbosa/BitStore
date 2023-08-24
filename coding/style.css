@@ -18,6 +18,8 @@ body,html{
 h1{
     text-align: center;
     padding: 10px;
+    margin: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .container{
@@ -64,23 +66,6 @@ a{
     box-sizing: border-box;
 }
 
-.banner{
-    background-color: black;
-    border: 1px solid black;
-
-    max-width: 100%;
-    height: auto;
-}
-
-.banner#img01{
-    background-image: url(/imgs/lobo1.jpg);
-    background-size: cover;
-    box-shadow: 2px black;
-    padding: 24vh;
-    background-position: right center;
-    background-attachment: fixed;
-}
-
 #nav{
     justify-content: space-between;
     grid-area: nav;
@@ -93,6 +78,21 @@ a{
     padding: 20px;
 }
 
+.banner{
+    background-color: black;
+    max-width: 100%;
+    height: auto;
+}
+
+.banner#img01{
+    background-image: url(https://www.zooplus.pt/magazine/wp-content/uploads/2021/03/kitten-sitzt-boden-768x512-1.jpeg);
+    background-size: cover;
+    box-shadow: 2px black;
+    padding: 24vh;
+    background-position: right center;
+    background-attachment: fixed;
+}
+
 img{
     max-width: 100%;
     display: block;
@@ -101,7 +101,7 @@ img{
 .flex{
     display: flex;
     flex-wrap: wrap;
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -109,11 +109,16 @@ img{
     flex: 1 1 200px;
     margin: 10px;
 }
+.flex > div:hover{
+    border: 1px solid black;
+    box-sizing: border-box;
+}
 
 .flex  p{
     color: black;
     text-align: center;
     padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -147,4 +152,19 @@ footer p{
 p#redes{
     margin: 15px;
     margin-left: 0px;
+}
+img#metodospagamento{
+    margin-top: 2px;
+    width: 450px;
+}
+img#instagram{
+    width: 35px;
+    margin-top: 8px;    
+}
+p#copy{
+    margin: -5px;
+    bottom: 0px;
+}
+p,a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

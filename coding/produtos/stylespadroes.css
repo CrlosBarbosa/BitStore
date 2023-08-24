@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+  background-color:#353138;  
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-area: "nav nav nav"
+                "main main main"
+                "footer footer footer";
+}               
+
+a{
+    padding: 10px;
+    margin-right: 0px;
+    padding-right: 0px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container #nav:hover{
+    transition-duration: 0.8s;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#nav{
+    justify-content: space-between;
+    grid-area: nav;
+    text-align: right;
+    margin: 2px;    
+    padding: 10px;
+}
+
+#menu{
+    padding: 20px;
+}
+
+#camiseta{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+
+    margin-top: 35px;
+    margin-left: 150px;
+}
