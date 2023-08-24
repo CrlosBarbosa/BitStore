@@ -34,7 +34,7 @@ a{
     margin-right: 0px;
     padding-right: 0px;
     text-decoration: none;
-
+    color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -107,7 +107,7 @@ img{
 }
 
 .flex  p{
-    color: blue;
+    color: black;
     text-align: center;
     padding: 5px;
 }

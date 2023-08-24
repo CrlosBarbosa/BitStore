@@ -62,6 +62,7 @@ h1{
     padding: 45px;
     color: white;
     padding-top: 5px;
+    font-family: monospace ;
 }
 
 p#resposta{
