@@ -4,15 +4,15 @@
 }
 
   /* Estilos para tornar o banner responsivo */
-  @media screen and (max-width: 768px) {
-    .main {
-      max-width: 100%; /* Defina a largura máxima para 100% em telas menores */
+  @media (max-width: 768px) {
+    .banner img{
+        max-width: 100%;
+        height: auto;
     }
-  }
+}
 
 body,html{
     background-color: white;
-    min-width: 100vh;
 }
 
 h1{
@@ -67,7 +67,11 @@ a{
 .banner{
     background-color: black;
     border: 1px solid black;
+
+    max-width: 100%;
+    height: auto;
 }
+
 .banner#img01{
     background-image: url(/imgs/lobo1.jpg);
     background-size: cover;
