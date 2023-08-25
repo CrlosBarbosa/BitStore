@@ -10,6 +10,13 @@
         height: auto;
     }
 }
+/* Faça a logo ocupar toda a largura disponível em telas pequenas (responsive) */
+
+@media (max-width: 768px) {
+    .logo {
+        text-align: center; /* Centralize a logo em telas pequenas */
+    }
+}
 
 body,html{
     background-color: white;
