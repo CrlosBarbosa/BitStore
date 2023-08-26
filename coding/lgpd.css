@@ -1,6 +1,59 @@
 *{
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media (max-width: 768px) {
+  #menu {
+      font-size: 12px; /* Tamanho da fonte menor para telas menores */
+      text-align: center; /* Centralizar o texto */
+      padding: 5px; /* Reduzir ainda mais o espaçamento do menu */
+      margin-top: 0; /* Remover o espaço superior */
+  }
+  
+  #nav img {
+      margin: 0 auto; /* Centralizar a imagem horizontalmente */
+      width: 80px; /* Reduzir o tamanho da imagem */
+  }
+}
+/* Ajustar o texto para telas menores */
+@media (max-width: 768px) {
+  #nav {
+      font-size: 5px; /* Tamanho da fonte menor para telas menores */
+      text-align: center; /* Centralizar o texto */
+      flex-direction: column; /* Colocar o texto em uma coluna */
+  }
+}
+/* Ajustar o texto para telas menores */
+@media (max-width: 768px) {
+  #menu {
+      text-align: center; /* Centralizar o texto */
+  }
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#nav img {
+  width: 110px;
+}
+
+#menu {
+  padding: 10px; /* Reduzir o espaçamento do menu */
+  font-size: 16px; /* Tamanho da fonte menor para o menu */
+  text-align: right;
+  flex: 1; /* Ocupar o espaço disponível restante */
+  margin-top: 20px; /* Espaço superior para separar da imagem */
+}
+
+a{
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body{
@@ -14,15 +67,6 @@ h1{
   text-align: center;
   font-size: 70px;
 }
-
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-area: "nav nav nav"
-                "main main main"
-                "footer footer footer";
-}               
 
 a{
     color: white;
@@ -39,17 +83,7 @@ a{
     padding: 5px;
 }
 
-#nav{
-    justify-content: space-between;
-    grid-area: nav;
-    text-align: right;
-    margin: 2px;    
-    padding: 10px;
-}
 
-#menu{
-    padding: 20px;
-}
 
 
 
@@ -66,6 +100,36 @@ img#atencao {
     margin: 0 auto;
     display: table;
     margin-top: 50px;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+  }
+  
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+      -webkit-filter: brightness(100%);
+    }
+    100% {
+      -webkit-transform: scale(1.1);
+      -webkit-filter: brightness(200%);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      filter: brightness(100%);
+    }
+    100% {
+      transform: scale(1.1);
+      filter: brightness(200%);
+    }
+  }
+  #logo {
+    animation: pulse 1s infinite;
+    margin: 0 auto;
+    display: flex;
     animation-direction: alternate;
     -webkit-animation-name: pulse;
     animation-name: pulse;
