@@ -1,7 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-box, .text-box {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -12,7 +21,7 @@
         margin-top: 0; /* Remover o espaço superior */
     }
     
-    #nav img {
+    .image-box {
         margin: 0 auto; /* Centralizar a imagem horizontalmente */
         width: 80px; /* Reduzir o tamanho da imagem */
     }
@@ -27,7 +36,7 @@
 }
 /* Ajustar o texto para telas menores */
 @media (max-width: 768px) {
-    #menu {
+    .text-box {
         text-align: center; /* Centralizar o texto */
     }
 }
@@ -55,7 +64,7 @@ body {
     margin-top: 35px; /* Espaço superior para separar da imagem */
 }
 
-a{
+a {
     padding: 8px;
     text-decoration: none;
     color: white;
@@ -63,52 +72,41 @@ a{
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 2fr; /* Uma coluna para a imagem e uma para o texto */
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "nav nav"
-                         "main main"
-                         "footer footer";
-}
-
-.content {
-    padding: 20px;
-    grid-area: main; /* Posicionando o conteúdo na coluna de conteúdo */
-}
-
-.flex-container {
-    display: flex; /* Usando flexbox para alinhar os itens horizontalmente */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    text-align: right;
 }
 
 .image-box {
-    flex: 1; /* A imagem ocupará 1 parte do espaço disponível */
-    margin-right: 20px; /* Espaço entre a imagem e o texto */
-    margin-left: 150px;
+    flex: 1;
+    max-width: 100%;
+    margin-left: 50px;
 }
 
-#camiseta {
-    width: 550px;
-    height: 750px;
+.image-box img {
+    max-width: 100%;
+    height: auto;
     display: block;
-    border: 1px solid white;
 }
 
 .text-box {
-    flex: 2; /* O texto ocupará 2 partes do espaço disponível */
-    text-align: right; /* Alinhando o texto à direita */
-    
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    text-align: right;
 }
 
 h1 {
-    text-align: center;
-
+    text-align: right;
 }
-p#descproduto{
+
+p#descproduto {
     margin-top: 35px;
     text-align: center;
 }
 
-.container #nav:hover{
+.container #nav:hover {
     transition-duration: 0.8s;
     padding: 5px;
     box-sizing: border-box;
@@ -129,37 +127,16 @@ p#descproduto{
     animation-direction: alternate;
     -webkit-animation-name: pulse;
     animation-name: pulse;
-  }
-  
-  @-webkit-keyframes pulse {
-    0% {
-      -webkit-transform: scale(1);
-      -webkit-filter: brightness(100%);
-    }
-    100% {
-      -webkit-transform: scale(1.1);
-      -webkit-filter: brightness(200%);
-    }
-  }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-      filter: brightness(100%);
-    }
-    100% {
-      transform: scale(1.1);
-      filter: brightness(200%);
-    }
-  }
+}
 
-footer{
+footer {
+    margin-top: 150px;
     grid-area: footer;
     bottom: 0;
     width: 100%;
     background-color: #333; /* Cor de fundo do rodapé */
     color: #fff; /* Cor do texto do rodapé */
-    padding: 40px 0; /* Espaçamento interno do rodapé */
+    padding: 5px 0; /* Espaçamento interno do rodapé */
 }
 
 footer ul {
@@ -173,28 +150,52 @@ footer li {
     color: white;
 }
 
-footer a{
+footer a {
     color: white;
 }
-footer p{
+
+footer p {
     padding-left: 8px;
 }
 
-#metodospagamento{
+#metodospagamento {
     padding: 0px;
     margin-bottom: 20px;
     width: 450px;
 }
 
-#instagram{
+#instagram {
     width: 35px;
+    display: inline-block;
 }
 
-p#copy{
+p#copy {
     margin: -5px;
     bottom: 0px;
 }
 
-p{
+p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(200%);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+    100% {
+        transform: scale(1.1);
+        filter: brightness(200%);
+    }
 }
