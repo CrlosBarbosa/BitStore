@@ -18,13 +18,12 @@
         padding: 5px; /* Reduzir ainda mais o espaçamento do menu */
         margin-top: 0; /* Remover o espaço superior */
     }
-    
+
     #nav img {
         margin: 0 auto; /* Centralizar a imagem horizontalmente */
         width: 80px; /* Reduzir o tamanho da imagem */
     }
 }
-/* Ajustar o texto para telas menores */
 @media (max-width: 768px) {
     #nav {
         font-size: 5px; /* Tamanho da fonte menor para telas menores */
@@ -38,18 +37,31 @@
         text-align: center; /* Centralizar o texto */
     }
 }
+@media (max-width: 768px) {
+    .banner#img01 {
+        padding: 12vh; 
+        background-position: center center;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Edu+SA+Beginner&family=PT+Sans:ital@1&family=Sriracha&display=swap');
 
 body,html{
     background-color: white;
     font-family: Inter,sans-serif;;
 }
 
-h1{
+h1#inicioprodutos{
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     margin: 5px;
+    margin-top: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    border-radius: 15px;
+    color: white;
+    background-image: linear-gradient(to right,#C4BEF7,#8273F5,#3E3775);
 }
+
   
 #nav {
     display: flex;
@@ -60,19 +72,19 @@ h1{
     width: 90px;
 }
 
-#menu {
+#menu{
     padding: 10px; /* Reduzir o espaçamento do menu */
     font-size: 16px; /* Tamanho da fonte menor para o menu */
-    text-align: right;
+    text-align: right; /* alinhamento do cabeçalho */
     flex: 1; /* Ocupar o espaço disponível restante */
     margin-top: 35px; /* Espaço superior para separar da imagem */
+    font-family: 'Bricolage Grotesque', sans-serif;
 }
 
 a{
     padding: 8px;
     text-decoration: none;
     color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .container #nav:hover{
@@ -101,21 +113,27 @@ a{
     box-sizing: border-box;
 }
 
-.banner{
+.banner {
     background-color: black;
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    overflow: hidden; /* Para evitar que a imagem interna ultrapasse os limites do banner */
 }
 
-.banner#img01{
-    background-image: url(https://www.zooplus.pt/magazine/wp-content/uploads/2021/03/kitten-sitzt-boden-768x512-1.jpeg);
+.banner#img01 {
+    background-image: url(/imgs/BannerBitStore.png);
     background-size: cover;
-    box-shadow: 2px black;
+    box-shadow: 2px 2px 4px black; /* Melhorar a sombra */
     padding: 24vh;
     background-position: right center;
     background-attachment: fixed;
+    height: 175px;
 }
 
+.banner#img01 img {
+    width: 100%; /* Tornar a imagem interna responsiva */
+    height: auto; /* Garantir que a altura seja ajustada automaticamente */
+}
 img{
     max-width: 100%;
     display: block;
@@ -135,6 +153,7 @@ img{
 .flex > div:hover{
     border: 1px solid black;
     box-sizing: border-box;
+    border-radius: 15px;
 }
 
 .flex  p{
@@ -143,7 +162,6 @@ img{
     padding: 5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 
 footer{
     display: flex;
@@ -174,6 +192,7 @@ footer p{
 
 p#redes{
     padding: 5px;
+    margin-top: -22px;
 }
 
 #metodospagamento{
@@ -192,10 +211,6 @@ p#copy{
     bottom: 0px;
 }
 
-p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
 /* Efeito pulsante na logo */
 #logo {
     animation: pulse 1s infinite;
@@ -206,7 +221,7 @@ p{
     animation-name: pulse;
   }
   
-  @-webkit-keyframes pulse {
+@-webkit-keyframes pulse {
     0% {
       -webkit-transform: scale(1);
       -webkit-filter: brightness(100%);
@@ -217,7 +232,7 @@ p{
     }
   }
   
-  @keyframes pulse {
+@keyframes pulse {
     0% {
       transform: scale(1);
       filter: brightness(100%);
