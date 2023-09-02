@@ -122,7 +122,7 @@ a{
 }
 
 .banner#img01 {
-    background-image: url(/imgs/BannerBitStore.png);
+    background-image: url(/imgs/Banners.png);
     background-size: cover;
     box-shadow: 2px 2px 4px black; /* Melhorar a sombra */
     padding: 24vh;
