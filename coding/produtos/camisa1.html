@@ -13,7 +13,7 @@
     <div class="container">
         <div id="nav">
             <div id="logo">
-                <a href="/coding/index.html"><img src="/imgs/LogoBitStore.png" alt=""></a>
+                <a href="/coding/index.html"><img src="/imgs/LogoBitStoresemfundo.png" alt=""></a>
             </div>
 
             <div id="menu">
@@ -35,21 +35,46 @@
         <div class="image-box">
             <img src="/imgs/lobo1.jpg" alt="Imagem">
         </div>
-        <div class="text-box">
-            <p id="descproduto">Seu texto aqui...</p>
+       
+            <!--Inicio seleção de tamanho e cor do produto -->
+
+            <!--Os paragrafos estão configurados cada um com uma classe para melhor estiização.-->
+
+            <p class="ctam">
+            <label for="itamanhos" style="padding: 5px;">Tamanhos</label>
+
+            <select name="tamanhos" id="itamanhos">
+            <option value="P">P</option>
+            <option value="M">M</option> <!-- Quando selecionado o tamanho mantem a imagem igual-->
+            <option value="G">G</option>
+            <option value="GG">GG</option>
+        </select>
+    
+        <br>
+        <br>    <!--Namoral, eu te odeio css e html-->
+      
+            <label for="icor" style="padding: 5px;">Cor:</label>
+            
+            <!-- A imagem precisa mudar de acordo com a cor selecionada-->
+            <select name="Cor" id="icor">
+                <option value="Azul">Azul</option>
+                <option value="Branca">Branca</option>
+                <option value="Preta">Preta</option>
+            </select>
+        </p>
+
+          <!-- Fim da seleção do produto -->
+
+          <div class="text-box">
+            <p id="descproduto">Texto</p>
+
         </div>
     </div>
     
-    </div>
-    </div>
-    </div>
-    </div>
-
-
     <footer>
         <ul>
 
-            <li><a id="quemsomos" href="/coding/quemsomos.html" target="_blank">Quem somos?</a>
+            <li><a id="quemsomos" href="/coding/quemsomos.html" target="_blank">Quem somos?</a></li>
 
                 <!--Link pro numero do WhatsApp - Carlos-->
             <li><a href="https://api.whatsapp.com/send/?phone=%2B554598605821&text&type=phone_number&app_absent=0"

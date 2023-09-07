@@ -43,6 +43,8 @@
         background-position: center center;
     }
 }
+/* as fontes padrões que vão ser utilizadas */
+
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Edu+SA+Beginner&family=PT+Sans:ital@1&family=Sriracha&display=swap');
 
 body{
@@ -50,6 +52,7 @@ body{
     font-family: Inter,sans-serif;;
     height: 100vh;
 }
+
 
 h1#inicioprodutos{
     text-align: center;

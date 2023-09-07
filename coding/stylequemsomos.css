@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 /* Media query para telas menores (por exemplo, tablets e smartphones) */
 @media (max-width: 768px) {
     section {
@@ -40,34 +45,42 @@
         text-align: center; /* Centralizar o texto */
     }
 }
+
+body{
+    background-color: white;
+    font-family: Inter,sans-serif;;
+    height: 100vh;
+}
+
+main{
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: rgba(128, 128, 128, 0.363);
+}
+
 #nav {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
 }
 
 #nav img {
-    width: 110px;
+    width: 90px;
 }
 
-#menu {
+#menu{
     padding: 10px; /* Reduzir o espaçamento do menu */
     font-size: 16px; /* Tamanho da fonte menor para o menu */
-    text-align: right;
+    text-align: right; /* alinhamento do cabeçalho */
     flex: 1; /* Ocupar o espaço disponível restante */
-    margin-top: 20px; /* Espaço superior para separar da imagem */
+    margin-top: 35px; /* Espaço superior para separar da imagem */
+    font-family: 'Bricolage Grotesque', sans-serif;
 }
 
-a{
-    padding: 15px;
-    text-decoration: none;
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
-*{
-    margin: 0px;
-    padding: 0px;
+.container #nav:hover{
+    transition-duration: 0.8s;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 body{
@@ -86,12 +99,6 @@ a{
     padding: 10px;
 }
 
-a:hover{
-   background-color: rgba(128, 0, 128, 0.363);
-   transition-duration: 0.8s;
-   padding: 5px;
-}
-
 main {
     padding: 5vh; /* Altere o padding para unidades relativas */
     margin: auto;
@@ -101,7 +108,6 @@ main {
 
 h1{
     text-align: center;
-    padding: 45px;
     color: white;
     padding-top: 5px;
     font-family: monospace ;
@@ -112,8 +118,10 @@ p#resposta{
     padding: 5px;
     font-family: 'Courier New', Courier, monospace;
 }
+
 p#pergunta{
     padding-bottom: 10px; padding-top: 10px;
+    text-align: left;
 }
 
 p{
@@ -121,13 +129,13 @@ p{
     max-width: 95vh;
     color: white;
     margin: 0 auto;
+    text-align: left;
 }
 
 section {
     padding: 10vh 0;
     line-height: 2em;
     padding-left: 30px;
-    text-align: center; /* Centraliza o conteúdo */
 }
 
 /* Estilos para a seção de imagem */
@@ -144,3 +152,37 @@ section#imgfundadores {
     background-attachment: fixed;
     min-height: 300px; /* Defina uma altura mínima para a seção */
 }
+
+/* Efeito pulsante na logo 
+
+#logo {
+    animation: pulse 1s infinite;
+    margin: 0 auto;
+    display: flex;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+  }
+  
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+      -webkit-filter: brightness(100%);
+    }
+    100% {
+      -webkit-transform: scale(1.1);
+      -webkit-filter: brightness(200%);
+    }
+  }
+  
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      filter: brightness(100%);
+    }
+    100% {
+      transform: scale(1.1);
+      filter: brightness(200%);
+    }
+  }
+ Ajustar, a logo ta explodindo o menu, n faz sentido nenhum kkkkkkk */
