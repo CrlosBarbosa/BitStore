@@ -112,10 +112,13 @@ p#descproduto {
 p.ctam{
     display: flex;
     align-items: center;
-    text-align: center;
-
     padding: 25px;
     font-size: 20px;
+}
+
+select#slcger{
+    padding: 2px;
+    width: 70px;
 }
 
 .container #nav:hover {
