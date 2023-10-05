@@ -4,14 +4,14 @@
 }
 
   /* Estilos para tornar o banner responsivo */
-  @media (max-width: 768px) {
+  @media screen and (max-width: 600px) and (max-width: 768px){
     .banner img{
         max-width: 100%;
         height: auto;
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 600px) and (max-width: 768px){
     #menu {
         font-size: 12px; /* Tamanho da fonte menor para telas menores */
         text-align: center; /* Centralizar o texto */
@@ -24,7 +24,7 @@
         width: 80px; /* Reduzir o tamanho da imagem */
     }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 600px) and (max-width: 768px){
     #nav {
         font-size: 5px; /* Tamanho da fonte menor para telas menores */
         text-align: center; /* Centralizar o texto */
@@ -32,12 +32,12 @@
     }
 }
 /* Ajustar o texto para telas menores */
-@media (max-width: 768px) {
+@media screen and (max-width: 600px) and (max-width: 768px){
     #menu {
         text-align: center; /* Centralizar o texto */
     }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 600px) and (max-width: 768px){
     .banner#img01 {
         padding: 12vh; 
         background-position: center center;
@@ -129,7 +129,7 @@ a{
     background-size: cover;
     box-shadow: 2px 2px 4px black; /* Melhorar a sombra */
     padding: 24vh;
-    background-position: right center;
+    background-position: center center;
     background-attachment: fixed;
     height: 175px;
 }
