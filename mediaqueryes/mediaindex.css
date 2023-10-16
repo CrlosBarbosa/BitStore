@@ -1,0 +1,47 @@
+/* Estilos para tornar o banner responsivo */
+@media screen and (max-width: 600px) and (max-width: 768px){
+    .banner img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) and (max-width: 768px){
+    #menu {
+        font-size: 12px; /* Tamanho da fonte menor para telas menores */
+        text-align: center; /* Centralizar o texto */
+        padding: 5px; /* Reduzir ainda mais o espaçamento do menu */
+        margin-top: 0; /* Remover o espaço superior */
+    }
+
+    #nav img {
+        margin: 0 auto; /* Centralizar a imagem horizontalmente */
+        width: 80px; /* Reduzir o tamanho da imagem */
+    }
+}
+@media screen and (max-width: 600px) and (max-width: 768px){
+    #nav {
+        font-size: 5px; /* Tamanho da fonte menor para telas menores */
+        text-align: center; /* Centralizar o texto */
+        flex-direction: column; /* Colocar o texto em uma coluna */
+    }
+}
+/* Ajustar o texto para telas menores */
+@media screen and (max-width: 600px) and (max-width: 768px){
+    #menu {
+        text-align: center; /* Centralizar o texto */
+    }
+}
+@media screen and (max-width: 600px) and (max-width: 768px){
+    .banner#img01 {
+        padding: 12vh; 
+        background-position: center center;
+    }
+}
+
+@media screen and (max-width:768px){
+    p#redes{
+        padding-top: 5px;
+        margin-top: 10px;
+    }
+}

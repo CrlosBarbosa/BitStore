@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+    #menu {
+        font-size: 12px; /* Tamanho da fonte menor para telas menores */
+        text-align: center; /* Centralizar o texto */
+        padding: 5px; /* Reduzir ainda mais o espaçamento do menu */
+        margin-top: 0; /* Remover o espaço superior */
+    }
+    
+    #nav img {
+        margin: 0 auto; /* Centralizar a imagem horizontalmente */
+        width: 80px; /* Reduzir o tamanho da imagem */
+    }
+  }
+  /* Ajustar o texto para telas menores */
+  @media (max-width: 768px) {
+    #nav {
+        font-size: 5px; /* Tamanho da fonte menor para telas menores */
+        text-align: center; /* Centralizar o texto */
+        flex-direction: column; /* Colocar o texto em uma coluna */
+    }
+  }
+  /* Ajustar o texto para telas menores */
+  @media (max-width: 768px) {
+    #menu {
+        text-align: center; /* Centralizar o texto */
+    }
+  }

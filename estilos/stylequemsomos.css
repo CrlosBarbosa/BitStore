@@ -3,49 +3,6 @@
     padding: 0px;
 }
 
-/* Media query para telas menores (por exemplo, tablets e smartphones) */
-@media (max-width: 768px) {
-    section {
-        padding: 5vh 0; /* Reduz o padding em telas menores */
-    }
-
-    section#imgfundadores {
-        min-height: 200px; /* Ajusta a altura mínima para telas menores */
-    }
-}
-@media (max-width: 768px) {
-    main {
-        padding: 2vh; /* Reduza o padding em telas menores */
-    }
-}
-@media (max-width: 768px) {
-    #menu {
-        font-size: 12px; /* Tamanho da fonte menor para telas menores */
-        text-align: center; /* Centralizar o texto */
-        padding: 5px; /* Reduzir ainda mais o espaçamento do menu */
-        margin-top: 0; /* Remover o espaço superior */
-    }
-    
-    #nav img {
-        margin: 0 auto; /* Centralizar a imagem horizontalmente */
-        width: 80px; /* Reduzir o tamanho da imagem */
-    }
-}
-/* Ajustar o texto para telas menores */
-@media (max-width: 768px) {
-    #nav {
-        font-size: 5px; /* Tamanho da fonte menor para telas menores */
-        text-align: center; /* Centralizar o texto */
-        flex-direction: column; /* Colocar o texto em uma coluna */
-    }
-}
-/* Ajustar o texto para telas menores */
-@media (max-width: 768px) {
-    #menu {
-        text-align: center; /* Centralizar o texto */
-    }
-}
-
 body{
     background-color: white;
     font-family: Inter,sans-serif;;
@@ -55,7 +12,6 @@ body{
 main{
     margin-top: 0px;
     padding-top: 0px;
-    background-color: rgba(128, 128, 128, 0.363);
 }
 
 #nav {
