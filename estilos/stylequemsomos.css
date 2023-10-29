@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: white;
+    background-image: linear-gradient(to right, #3A3A3A, #464343);
     font-family: Inter,sans-serif;;
     height: 100vh;
 }
@@ -31,7 +31,6 @@ main{
     margin-top: 35px; /* Espaço superior para separar da imagem */
     font-family: 'Bricolage Grotesque', sans-serif;
 }
-
 
 .container #nav:hover{
     transition-duration: 0.8s;
