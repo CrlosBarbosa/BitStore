@@ -39,6 +39,12 @@
     }
 }
 
+@media screen and (width:200px) and (max-width:768px){
+     div#menu{
+        color: red;
+    }
+}
+
 @media screen and (max-width:768px){
     p#redes{
         padding-top: 5px;

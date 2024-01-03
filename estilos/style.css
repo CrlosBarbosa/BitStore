@@ -3,6 +3,12 @@
     padding: 0px;
 }
 
+@media screen and (max-width: 768px){
+    #menu > a{
+        color: black;
+        font-size: 17px;
+    }
+ }
 
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Edu+SA+Beginner&family=PT+Sans:ital@1&family=Sriracha&display=swap');
 
@@ -11,7 +17,6 @@ body{
     font-family: Inter,sans-serif;;
     height: 100vh;
 }
-
 
 h1#inicioprodutos{
     text-align: center;
@@ -43,10 +48,10 @@ h1#inicioprodutos{
     font-family: 'Bricolage Grotesque', sans-serif;
 }
 
+
 a{
     padding: 8px;
     text-decoration: none;
-    color: black;
 }
 
 .container #nav:hover{
@@ -78,27 +83,40 @@ a{
 .banner {
     background-color: black;
     max-width: 100%;
-    height: 100%;
+    height: auto;
     overflow: hidden; /* Para evitar que a imagem interna ultrapasse os limites do banner */
 }
 
 .banner#img01 {
-    background-image: url(/imgs/Banners.png);
+    background-image: url(https://i.ibb.co/2WJCS7M/Banners.png);
     background-size: cover;
     box-shadow: 2px 2px 4px black; /* Melhorar a sombra */
-    padding: 24vh;
+    padding: 35vh 1vw; /* Ajustar o padding para ser mais responsivo */
     background-position: center center;
     background-attachment: fixed;
-    height: 175px;
 }
 
 .banner#img01 img {
     width: 100%; /* Tornar a imagem interna responsiva */
     height: auto; /* Garantir que a altura seja ajustada automaticamente */
 }
-img{
+
+img {
     max-width: 100%;
+    height: auto;
     display: block;
+}
+
+/* Adicionar media queries para ajustes em dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .banner#img01 {
+        padding: 35vh 2vw; /* Ajustar o padding para dispositivos móveis */
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 25%;
+        background-image: url(https://i.ibb.co/Kj26Nqt/mobile-1.png)
+ }
 }
 
 .flex{
