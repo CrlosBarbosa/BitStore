@@ -52,6 +52,7 @@ h1#inicioprodutos{
 a{
     padding: 8px;
     text-decoration: none;
+    color: black;
 }
 
 .container #nav:hover{
